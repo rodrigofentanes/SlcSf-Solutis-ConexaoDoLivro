@@ -139,7 +139,7 @@ main {
 #welcome{
     font-size: 1.4rem;
     font-weight: 200;
-    text-align: justify;
+    text-align: center;
 }
 
 #welcome a {

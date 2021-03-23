@@ -1,99 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Carlos Rodrigo Araújo Fentanes">
-        <meta name="description" content="Está é a página inicial do portifólio de Rodrigo Fentanes, programador/developer soteropolitano apaixonado por tecnologia. A partir desta página você poderá encontrar todas as referências necessárias para conhecê-lo melhor. Seja bem vindx!">
-        <meta name="keywords" content="portifólio, Rodrigo Fentanes, Carlos Rodrigo Araújo Fentanes, programador, tecnologia, Salvador, Bahia, Brasil">
-        <title>Contate-nos | Conexão do livro</title>
-        <link rel="stylesheet" href="../css/mayerReset.css">
-        <link rel="stylesheet" href="../css/contato.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/15ee8b6d47.js" crossorigin="anonymous"></script>
-    </head>
-    <body >
-        <nav>
-            <div class="navbar">
-                <a href="../index.html" id="logo" title="Voltar para o início"> <i class="fas fa-book"></i> Conexão do livro</a>
-                <ul>
-                    <li><a class="" href="../index.html"> <i class="nav-icon fas fa-user-astronaut"></i> Início</a></li>
-                    <li><a class="current" href="./contato.html"> <i class="nav-icon fas fa-user-tie"></i> Contato</a></li>
-                </ul>
-            </div>
-        </nav>
-        <div class="animation">
-            <div class="container">
-                <header>
-                    <h1><MyTag>></MyTag>Contate-nos<MyTag>_</MyTag></h1>
-                </header>
-                <main>
-                    <section>
-                        <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
-                        
-                            <input type=hidden name="oid" value="00D5Y000001eG9T">
-                            <input type=hidden name="retURL" value="http://www.conexao-do-livro.com.br/send-lead">
-                            
-                            <!--  ----------------------------------------------------------------------  -->
-                            <!--  NOTA: Estes campos são elementos de depuração opcionais. Remova o       -->
-                            <!--  comentário dessas linhas se quiser testar no modo de depuração.         -->
-                            <!--  <input type="hidden" name="debug" value=1>                              -->
-                            <!--  <input type="hidden" name="debugEmail"                                  -->
-                            <!--  value="rodrigo.fentanes@hotmail.com">                                   -->
-                            <!--  ----------------------------------------------------------------------  -->
-                            
-                            <label for="first_name">Primeiro Nome</label>
-                            <input class="text-input" id="first_name" maxlength="40" name="first_name" size="20" type="text" />
-                            <br>
-                            
-                            <label for="last_name">Sobrenome</label>
-                            <input class="text-input" id="last_name" maxlength="80" name="last_name" size="20" type="text" />
-                            <br>
-                            
-                            <label for="email">Email</label>
-                            <input class="text-input" id="email" maxlength="80" name="email" size="20" type="text" />
-                            <br>
-                            
-                            Qual o comportamento de sua empresa?
-                            <select class="text-input" id="00N5Y00000LLWf2" name="00N5Y00000LLWf2" title="Tipo">
-                                <option value="">-- Nenhum --
-                                </option><option value="Editora">Editora</option>
-                                <option value="Loja">Loja</option>
-                            </select><br>
-                            
-                            <label for="company">Nome da Empresa</label>
-                            <input class="text-input" id="company" maxlength="40" name="company" size="20" type="text" />
-                            <br>
-                            
-                            CNPJ da Empresa:
-                            <input class="text-input" id="00N5Y00000LLWf7" maxlength="18" name="00N5Y00000LLWf7" size="20" type="text" />
-                            <br>
-                            
-                            <label for="city">Cidade</label>
-                            <input class="text-input" id="city" maxlength="40" name="city" size="20" type="text" />
-                            <br>
-                            
-                            <label for="state">Estado/província</label>
-                            <input class="text-input" id="state" maxlength="20" name="state" size="20" type="text" />
-                            <br>
-                            
-                            <!--
-                                VESAO ORIGINAL DO SALES
-                                input type="submit" name="submit" class="btn-sm"> 
-                            -->
-                            <div class="a-btn-box">
-                                <button type="submit" name="submit" class="btn-sm">Enviar &nbsp;&nbsp;<i class="fas fa-paper-plane"></i></button>                                 
-                            </div>                            
-                        </form>
-                    </section>
-                </main>
-                <footer>
-                    <div> <i class="far fa-copyright"></i> 2021 - Conexão do livro </div>
-                </footer>
-            </div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Carlos Rodrigo Araújo Fentanes">
+    <meta name="description"
+        content="Está é a página inicial do portifólio de Rodrigo Fentanes, programador/developer soteropolitano apaixonado por tecnologia. A partir desta página você poderá encontrar todas as referências necessárias para conhecê-lo melhor. Seja bem vindx!">
+    <meta name="keywords"
+        content="portifólio, Rodrigo Fentanes, Carlos Rodrigo Araújo Fentanes, programador, tecnologia, Salvador, Bahia, Brasil">
+    <title>Contate-nos | Conexão do livro</title>
+    <link rel="stylesheet" href="../css/mayerReset.css">
+    <link rel="stylesheet" href="../css/contato.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/15ee8b6d47.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <a href="../index.html" id="logo" title="Voltar para o início"> <i class="fas fa-book"></i> Conexão do
+                livro</a>
+            <ul>
+                <li><a class="" href="../index.html"> <i class="nav-icon fas fa-user-astronaut"></i> Início</a></li>
+                <li><a class="current" href="./contato.html"> <i class="nav-icon fas fa-user-tie"></i> Contato</a></li>
+            </ul>
         </div>
-    </body>
+    </nav>
+    <div class="animation">
+        <div class="container">
+            <header>
+                <h1>
+                    <MyTag>></MyTag>Contate-nos<MyTag>_</MyTag>
+                </h1>
+            </header>
+            <main>
+                <section>
+                    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+                        <input type=hidden name="oid" value="00D5Y000001eG9T">
+                        <input type=hidden name="retURL" value="https://www.vejaai.com.br/bonsoriginais/JqPagueSeguro/icones/sucesso.png">
+
+                        <!--  ----------------------------------------------------------------------  -->
+                        <!--  NOTA: Estes campos são elementos de depuração opcionais. Remova o       -->
+                        <!--  comentário dessas linhas se quiser testar no modo de depuração.         -->
+                        <!--  <input type="hidden" name="debug" value=1>                              -->
+                        <!--  <input type="hidden" name="debugEmail"                                  -->
+                        <!--  value="rodrigo.fentanes@hotmail.com">                                   -->
+                        <!--  ----------------------------------------------------------------------  -->
+
+                        <label for="first_name">Seu Primeiro Nome</label><input class="text-input" id="first_name" maxlength="40" name="first_name" size="20" type="text" />
+                        <label for="last_name">Seu Sobrenome</label><input class="text-input" id="last_name" maxlength="80" name="last_name" size="20" type="text" />
+                        
+                        <label for="email">Email</label><input class="text-input" id="email" maxlength="80" name="email" size="20" type="text" />
+                        <label for="mobile">Celular</label><input class="text-input" id="mobile" maxlength="40" name="mobile" size="20" type="text" />
+                        <label for="phone">Telefone</label><input class="text-input" id="phone" maxlength="40" name="phone" size="20" type="text" />
+                        
+                        <label for="company">Nome da Empresa</label><input class="text-input" id="company" maxlength="40" name="company" size="20" type="text" />
+                        CNPJ:<input class="text-input" id="00N5Y00000LLWf7" maxlength="18" name="00N5Y00000LLWf7" size="20" type="text" />
+                        <label for="url">Site da Web</label><input class="text-input" id="url" maxlength="80" name="url" size="20" type="text" />
+                        Tipo do negócio:<select class="text-input" id="00N5Y00000LLWf2" name="00N5Y00000LLWf2" title="Tipo">
+                            <option value="">-- Nenhum --</option>
+                            <option value="Editora">Editora</option>
+                            <option value="Loja">Loja</option>
+                        </select>
+
+                        <label for="zip">CEP</label><input class="text-input" id="zip" maxlength="20" name="zip" size="20" type="text" />
+                        <label for="country">País</label><input class="text-input" id="country" maxlength="40" name="country" size="20" type="text" />
+                        <label for="state">Estado/província</label><input class="text-input" id="state" maxlength="20" name="state" size="20" type="text" />
+                        <label for="city">Cidade</label><input class="text-input" id="city" maxlength="40" name="city" size="20" type="text" />
+                        <label for="street">Rua</label><textarea class="text-input" name="street"></textarea>
+
+                        <label for="lead_source">Como você soube do nosso serviço?</label><select class="text-input" id="lead_source" name="lead_source">
+                            <option value="">-- Nenhum --</option>
+                            <option value="Web">Web</option>
+                            <option value="Phone Inquiry">Phone Inquiry</option>
+                            <option value="Partner Referral">Partner Referral</option>
+                            <option value="Purchased List">Purchased List</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        
+                        <label for="description">Descreva o motivo do seu contato:</label><textarea class="text-input" name="description"></textarea>
+                        <br>
+                        
+                        <!-- <input type="submit" name="submit"> -->
+                        <div class="a-btn-box">
+                            <button type="submit" name="submit" class="btn-sm">Enviar &nbsp;&nbsp;<i class="fas fa-paper-plane"></i></button>                                 
+                        </div>
+                        
+                    </form>
+                </section>
+            </main>
+            <footer>
+                <div> <i class="far fa-copyright"></i> 2021 - Conexão do livro </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
 </html>
