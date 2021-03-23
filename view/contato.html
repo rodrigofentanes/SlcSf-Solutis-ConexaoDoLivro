@@ -1,35 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- Responsividade -->
         <meta charset="UTF-8">
+        <meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- SEO -->
         <meta name="author" content="Carlos Rodrigo Araújo Fentanes">
         <meta name="description" content="Está é a página inicial do portifólio de Rodrigo Fentanes, programador/developer soteropolitano apaixonado por tecnologia. A partir desta página você poderá encontrar todas as referências necessárias para conhecê-lo melhor. Seja bem vindx!">
         <meta name="keywords" content="portifólio, Rodrigo Fentanes, Carlos Rodrigo Araújo Fentanes, programador, tecnologia, Salvador, Bahia, Brasil">
-        <title>Sobre mim | Rodrigo</title>
-        
-        <!-- Css -->
+        <title>Contate-nos | Conexão do livro</title>
         <link rel="stylesheet" href="../css/mayerReset.css">
-        <link rel="stylesheet" href="../css/style-contato.css">
-
-        <!-- fonts -->
+        <link rel="stylesheet" href="../css/contato.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
-
-        <!-- Fontawesome -->
         <script src="https://kit.fontawesome.com/15ee8b6d47.js" crossorigin="anonymous"></script>
     </head>
     <body >
         <nav>
             <div class="navbar">
-                <a href="./" id="logo" title="Voltar para o início"> <i class="fas fa-code"></i> RF</a>
+                <a href="../index.html" id="logo" title="Voltar para o início"> <i class="fas fa-book"></i> Conexão do livro</a>
                 <ul>
-                    <li><a class="" href="./"> <i class="nav-icon fas fa-user-astronaut"></i> Início</a></li>
-                    <li><a class="" href="./sobre.html"> <i class="nav-icon fas fa-user"></i> Sobre</a></li>
-                    <li><a class="" href="./portifolio.html"> <i class="nav-icon fas fa-user-ninja"></i> Portifólio</a></li>
+                    <li><a class="" href="../index.html"> <i class="nav-icon fas fa-user-astronaut"></i> Início</a></li>
                     <li><a class="current" href="./contato.html"> <i class="nav-icon fas fa-user-tie"></i> Contato</a></li>
                 </ul>
             </div>
@@ -37,78 +28,70 @@
         <div class="animation">
             <div class="container">
                 <header>
-                    <h1><MyTag>></MyTag>Contate-me<MyTag>_</MyTag></h1>
+                    <h1><MyTag>></MyTag>Contate-nos<MyTag>_</MyTag></h1>
                 </header>
                 <main>
-                    <section id="contact-form">
-                        <form action="process.php">
-                            <div>
-                                <label for="name">Nome:</label>
-                                <input class="text-input" type="text" id="name" name="name" placeholder="Seu nome...">
-                            </div>
-                            <div>
-                                <label for="enterprise">Empresa:</label>
-                                <input class="text-input" type="text" id="name" name="enterprise" placeholder="Sua empresa...">
-                            </div>
-                            <div>
-                                <label for="email">Email:</label>
-                                <input class="text-input" type="email" id="email" name="email" placeholder="Email para contato...">
-                            </div>
-                            <div>
-                                <label for="message">Menssagem:</label>
-                                <textarea class="text-input" name="message" id="message" cols="30" rows="5"></textarea>
-                            </div>
+                    <section>
+                        <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+                        
+                            <input type=hidden name="oid" value="00D5Y000001eG9T">
+                            <input type=hidden name="retURL" value="http://www.conexao-do-livro.com.br/send-lead">
+                            
+                            <!--  ----------------------------------------------------------------------  -->
+                            <!--  NOTA: Estes campos são elementos de depuração opcionais. Remova o       -->
+                            <!--  comentário dessas linhas se quiser testar no modo de depuração.         -->
+                            <!--  <input type="hidden" name="debug" value=1>                              -->
+                            <!--  <input type="hidden" name="debugEmail"                                  -->
+                            <!--  value="rodrigo.fentanes@hotmail.com">                                   -->
+                            <!--  ----------------------------------------------------------------------  -->
+                            
+                            <label for="first_name">Primeiro Nome</label>
+                            <input class="text-input" id="first_name" maxlength="40" name="first_name" size="20" type="text" />
+                            <br>
+                            
+                            <label for="last_name">Sobrenome</label>
+                            <input class="text-input" id="last_name" maxlength="80" name="last_name" size="20" type="text" />
+                            <br>
+                            
+                            <label for="email">Email</label>
+                            <input class="text-input" id="email" maxlength="80" name="email" size="20" type="text" />
+                            <br>
+                            
+                            Qual o comportamento de sua empresa?
+                            <select class="text-input" id="00N5Y00000LLWf2" name="00N5Y00000LLWf2" title="Tipo">
+                                <option value="">-- Nenhum --
+                                </option><option value="Editora">Editora</option>
+                                <option value="Loja">Loja</option>
+                            </select><br>
+                            
+                            <label for="company">Nome da Empresa</label>
+                            <input class="text-input" id="company" maxlength="40" name="company" size="20" type="text" />
+                            <br>
+                            
+                            CNPJ da Empresa:
+                            <input class="text-input" id="00N5Y00000LLWf7" maxlength="18" name="00N5Y00000LLWf7" size="20" type="text" />
+                            <br>
+                            
+                            <label for="city">Cidade</label>
+                            <input class="text-input" id="city" maxlength="40" name="city" size="20" type="text" />
+                            <br>
+                            
+                            <label for="state">Estado/província</label>
+                            <input class="text-input" id="state" maxlength="20" name="state" size="20" type="text" />
+                            <br>
+                            
+                            <!--
+                                VESAO ORIGINAL DO SALES
+                                input type="submit" name="submit" class="btn-sm"> 
+                            -->
                             <div class="a-btn-box">
-                                <button type="submit" class="btn-sm">Enviar &nbsp;&nbsp;<i class="fas fa-paper-plane"></i></button>                                 
-                            </div>
+                                <button type="submit" name="submit" class="btn-sm">Enviar &nbsp;&nbsp;<i class="fas fa-paper-plane"></i></button>                                 
+                            </div>                            
                         </form>
                     </section>
-                    <!-- <section id="evaluate-form">
-                        <form action="process.php">
-                            <div class="box">
-                                <h2>O que achou do site?</h2>
-                                <div>
-                                    <input type="radio" value="nda" name="rating" id="nda" checked>
-                                    <label for="nda">Prefiro não opinar</label>
-                                </div>
-                                <div>
-                                    <input type="radio" value="ruim" name="rating" id="ruim">
-                                    <label for="ruim">Ruim</label>
-                                </div>
-                                <div>
-                                    <input type="radio" value="bom" name="rating" id="bom">
-                                    <label for="bom">Bom</label>
-                                </div>
-                                <div>
-                                    <input type="radio" value="otimo" name="rating" id="otimo">
-                                    <label for="otimo">Ótimo</label>
-                                </div>
-                            </div>
-                            <div class="box">
-                                <h2>Quais das minhas habilidades lhe interessa?</h2>
-                                <div>
-                                    <input type="checkbox" value="html5" name="interest" id="html5">
-                                    <label for="html5">HTML5</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" value="css3" name="interest" id="css3">
-                                    <label for="css3">CSS3</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" value="javascript" name="interest" id="javascript">
-                                    <label for="javascript">JavaScript</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" value="react" name="interest" id="react">
-                                    <label for="react">REACT</label>
-                                </div>
-                            </div>
-                            <input class="btn-lg" type="submit" value="Submit" id="button">
-                        </form>
-                    </section> -->
                 </main>
                 <footer>
-                    <div> <i class="far fa-copyright"></i> 2021 Rodrigo Fentanes </div>
+                    <div> <i class="far fa-copyright"></i> 2021 - Conexão do livro </div>
                 </footer>
             </div>
         </div>

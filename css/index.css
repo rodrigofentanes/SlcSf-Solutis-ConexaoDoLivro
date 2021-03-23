@@ -16,7 +16,6 @@ html, body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.5;
     letter-spacing: 1.1px;
-    background: url(../img/bw-rf.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -26,8 +25,6 @@ html, body {
 .animation {
     background: linear-gradient(-45deg, rgba(206, 36, 93, 0.2), rgba(206, 36, 93, 0.2), rgba(206, 36, 93, 0.2), rgba(238, 119, 82, 0.2  ), rgba(42, 197, 161, .97), rgba(36, 160, 206, .97), rgba(36, 160, 206, 0.98), rgba(36, 160, 206, 0.99));
     background-size: 1000% 1000%;
-    animation: gradient 5s linear 1;
-    /* vh propertie allows us to use 100% of page slaces instead of 100% of page view */
     min-height: 100vh;
 }
 
