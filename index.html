@@ -1,0 +1,225 @@
+<!--  Isto é um comentário em HTML -->
+
+<!-- A INTERNET 
+        Como a internet funciona:
+            => É uma rede global de computadores.
+            => Cada computador/roteador tem um Endereço IP (73.158.6.61).
+            => Computadores conversam entre si utilizando o protocolo TCP/IP.
+            => O protocolo HTTP lida com o tráfego web entre browsers e servidores web através de requests e responses. É chamado de application layer protocol e roda sobre o protocolo TCP.
+            => HTTPS é utilizado para conexões seguras, utiliza certificados SSL e afins para tal propósito.
+            => Existem outros tipos de protocolos.
+            => Websites/Webpages são arquivos armazenados em computadores com a finalidade de rodar um pedaço de software chamado web server (Apache, Nginx, etc).
+            => Hosting Companies provêm espaços num servidor próprio para o armazenamento de websites de terceiros.
+            => Domain Names podem ser comprados e ligados à web servers.
+            => O DNS é utilizado para mapear os Domain Names, relacionando-os também aos seus respectivos endereços IP.
+
+        Abaixo uma imagem para representar, de forma simples, esta relação:
+-->
+<a href="/img/Como_a_internet_funciona.png" target="_blank" style="visibility:hidden"></a>
+
+<!-- INTRODUÇÃO ÀS TECNOLOGIAS WEB
+        O que é o HTML (Hypertext Markup Language):
+            => HTML não é uma linguagem de programação.
+            => É utilizado para mostrar conteúdo.
+
+        O que o HTML faz: 
+            => Constrói conteúdo estático.
+
+        O que é o CSS (Cascading Style Sheets):
+            => É utilizado para estilizar elementos HTML.
+            => Pode ser estendida com Sass/Less.
+
+        O que o CSS faz:
+            => Constrói a parte visual do HTML.
+
+        Tecnologias e suas aplicações comuns:
+            => HTML: Mostrar conteúdo / Estruturar.
+            => CSS: Estilo & Design.
+            => JavaScript: Programar o Front End dinamicamente.
+            => PHP, Python, C#, JavaScript: Programar o Backend.
+            => MySQL, MongoDB: Banco de dados / Armazenamento.
+-->
+
+<!-- INTRODUÇÃO AO HTML
+        => Mais sobre HTML: https://developer.mozilla.org/pt-BR/docs/Web/HTML
+        => Lista completa de tags HTML: https://www.w3schools.com/tags/default.asp
+        
+    EMMET (VS CODE)
+        No VS Code o snippet Emmet é utilizado para codificar rapidamente as tags HTML através de atalhos.
+
+        Exemplo: ul>li*3>span.hello$ 
+        *** Pressione ENTER ou TAB para aplicar o atalho. ***
+
+        O atalho acima cria o seguinte código:
+            <ul>
+            <li><span class="hello1"></span></li>
+            <li><span class="hello2"></span></li>
+            <li><span class="hello3"></span></li>
+            </ul>
+
+        Documentação do Emmet: https://docs.emmet.io/cheat-sheet/
+        
+    LIVE SERVER (VS CODE)
+        A extensão live server permite subir um servidor local para rodar arquivos web.
+
+        *** Após instalar a extensão basta dar um clique com o botão direito no arquivo que deseja rodar e ir na opção “Open with live server”. ***
+
+        *** Há também um botão no canto inferior direito do VS Code para rodar o live server. ***
+
+    ARQUIVOS HTML
+        Arquivos nomeados "index.html", normalmente, serão abertos primeiramente, ou seja, o servidor irá procurar este arquivo na raiz de sua pasta e assumi-lo como pagina iniciail.
+-->
+
+<!-- 
+    => DOCTYPE indica o tipo de formato do arquivo a ser interpretado pelo navegador. No caso abaixo é "html"
+    => No VS Code, graças ao Emmet, basta digitar uma exclamação (!) para criar uma base de código HTML.
+-->
+<!DOCTYPE html>
+<!-- 
+    => A tag html indica a raiz de toda página html.
+    O atributo lang na tag html indica a linguagem na qual o conteúdo da página está escrito. 
+    => Para saber mais acesse: https://tableless.com.br/declarando-idiomas-no-html/
+-->
+<html lang="pt-br">
+    <!-- 
+        O head irá conter as configurações da página html.
+        Está a a parte "não visível" da página html
+        Mais sobre a head: https://www.w3schools.com/html/html_head.asp 
+    -->
+    <head>
+        <!-- Configuração de caracteres compatíveis -->
+        <!-- Mais sobre meta tag:
+                Iniciante => https://www.w3schools.com/tags/tag_meta.asp
+                Avançado => https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/meta
+        -->
+        <meta charset="UTF-8">
+        <!-- Responsividade / Visualização do conteúdo -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Indica o autor da página -->
+        <meta name="author" content="Carlos Rodrigo Araújo Fentanes">
+        <!-- Search Engine Optimization (SEO) -->
+        <meta name="keywords" content="portifólio, Rodrigo Fentanes, Carlos Rodrigo Araújo Fentanes, programador, tecnologia, Salvador, Bahia, Brasil">
+        <!-- O Google irá mostrar este título nos resultados de pesquisa -->
+        <title>Sobre mim | Rodrigo</title>
+        <!-- O Google irá mostrar esta descrição embaixo do título ao mostrar os resultados de pesquisa -->
+        <meta name="description" content="Rodrigo Fentanes é um programador/developer soteropolitano apaixonado por tecnologia. A partir desta página você poderá encontrar todas as referências necessárias para conhecê-lo melhor.">
+        
+        <!-- O código CSS pode ser colocado dentro da tag style, mas isso não é uma boa prática -->
+        <style>
+            /* Este é um comentário CSS */
+        </style>
+        
+        <!-- Os código em script, como javascript por exemplo, podem vir dentre da tag script -->
+        <script>
+            // Este é um comentário de unilinha dentro de um script.
+            /*
+                Este é um comentário multilinha
+            */
+            
+            /*  
+                => Abaixo o script só será reconhecido caso o navegador tenha suporte à scripts, caso contrário, o mesmo será considerado apenas um comentário HTML.
+                    <!--
+                    document.write("Olá mundo!")
+                    //-->
+            */
+
+             
+        </script>
+
+        <!-- RELACIONAMENTO ENTRE ARQUIVOS
+            A tag 'link' auxilia no carregamento de arquivos CSS externos
+            Mais sobre a tag link: 
+                => https://www.w3schools.com/tags/tag_link.asp
+                => https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/link
+        -->
+        <link rel="stylesheet" href="../css/mayerReset.css">
+        <link rel="stylesheet" href="../css/style-index.css">
+
+        <!-- CARREGAMENTO CONDICIONAL 
+            Carrega o arquivo CSS somente se a largura (width) for menor que 768px.
+        -->
+        <link rel="stylesheet" media="screen and (max-width: 768px)" href="">
+
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+
+
+        <!-- Fontawesome -->
+        <script src="https://kit.fontawesome.com/15ee8b6d47.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body >
+        <!-- this page use the semantic tag consept. -->
+        <nav>
+            <div class="navbar">
+                <a href="./" id="logo" title="Voltar para o início"> <i class="fas fa-code"></i> RF</a>
+                <ul>
+                    <li><a class="current" href="./"> <i class="nav-icon fas fa-user-astronaut"></i> Início</a></li>
+                    <li><a class="" href="./sobre.html"> <i class="nav-icon fas fa-user"></i> Sobre</a></li>
+                    <li><a class="" href="./portifolio.html"> <i class="nav-icon fas fa-user-ninja"></i> Portifólio</a></li>
+                    <li><a class="" href="./contato.html"> <i class="nav-icon fas fa-user-tie"></i> Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="animation">
+            <div class="container">
+                <header>
+                        <p>
+                            Developer
+                            <i class="fas fa-terminal"></i>
+                            tecnology
+                        </p> 
+                        <h1>
+                            <!-- The conservative way is use a <span> tag, but create a tag is more fun -->
+                            <MyTag>Rodrigo</MyTag>
+                            Fentanes
+                        </h1>
+                </header>
+                <main>
+                    <section id="welcome">
+                        <p>
+                            Olá, eu sou Rodrigo Fentanes e este é o meu endereço web. 
+                            Neste você encontratrá informações sobre minha vida pessoal e profissional.
+                        </p>
+                        <p>
+                            Este é um site estático, criado com o intúito de praticar e divulgar meus conhecimentos e habilidades como desenvolvedor/programador além de explorar diferentes formas de codificação. 
+                            Por isso não estranhe se uma página seguir um padrão estático e outra um padrão flex ou de doze colunas. 
+                            Este é o meu espaço de aprendizado e diversão!
+                        </p>
+                        <p>Para ver outros projetos mais sofisticados clique em <a href="#" title='Ir para "portifólio"'>portifólio</a>. Caso deseje saber sobre minhas competências, clique em <a href="./sobre" title='Ir para "sobre"'>sobre</a>.</p>
+                        <p>Por fim, seja bem vindx e boa navegação!</p>
+                    </section>
+                    <!-- <section id="proficiency">
+                        <p id="play-with-icons">
+                            <i class="fab fa-html5" title="HTML5 - Avançado"></i>
+                            <i class="fab fa-css3" title="CSS3 - Avançado"></i>
+                            <i class="fab fa-git-alt" title="Git - Intermediário"></i>
+                            <i class="fab fa-js" title="JavaScript -  Intermediário"></i>
+                            <i class="fab fa-react" title="React - Intermediário"></i>
+                            <i class="fab fa-node-js"></i>
+                            <i class="fab fa-java"></i> 
+                        </p>
+                    </section> -->
+                    <section id="social-media">
+                        <p>Siga-me nas redes sociais:</p>
+                        <!-- ícone com única função de estabilziar a visualização de conteúdo -->
+                        <a class="icon-stabilize"><i class="fas fa-square"></i></a>
+    
+                        <a class="icon" href="https://www.linkedin.com/in/rodrigofentanes" target="_blank" title="Linkedin"><i class="fab fa-linkedin"></i></a>
+                        <a class="icon" href="https://github.com/rodrigofentanes" target="_blank" title="Github"><i class="fab fa-github"></i></a>
+                        <a class="icon" href="https://www.instagram.com/rodrigofentaness/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a class="icon" href="https://api.whatsapp.com/send?phone=5571983825448&text=ol%C3%A1%2C%20em%20que%20posso%20ajudar%3F" target="_blank" title="Whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        
+                        <!-- ícone com única função de estabilziar a visualização de conteúdo -->
+                        <a class="icon-stabilize" ><i class="fas fa-square"></i></a>
+                    </section>
+                </main>
+                <footer>
+                    <div> <i class="far fa-copyright"></i> 2021 Rodrigo Fentanes </div>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>
